@@ -1,1 +1,1 @@
-export const getGithubVersion = () => "github";
+export const getGithubVersion = () => "v2.0.0"
