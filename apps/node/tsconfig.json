@@ -1,5 +1,12 @@
 {
   "extends": "tsconfig/node.json",
   "include": ["**/*.ts"],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@acme/api/core": ["../../libs/api/src/core"],
+      "@acme/api/github": ["../../libs/api/src/github"]
+    }
+  },
   "exclude": ["node_modules"]
 }

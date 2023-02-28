@@ -3,7 +3,8 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "tsx index.ts"
+    "start": "tsx index.ts",
+    "build": "tsup index.ts"
   },
   "dependencies": {
     "@acme/api": "*"
