@@ -1,12 +1,9 @@
 {
   "extends": "tsconfig/node.json",
-  "include": ["**/*.ts"],
+  "include": ["src"],
+  "exclude": ["dist", "build", "node_modules"],
   "compilerOptions": {
-    "baseUrl": ".",
-    "paths": {
-      "@acme/api/core": ["../../libs/api/src/core"],
-      "@acme/api/github": ["../../libs/api/src/github"]
-    }
-  },
-  "exclude": ["node_modules"]
+    "rootDir": "src",
+    "outDir": "dist"
+  }
 }
