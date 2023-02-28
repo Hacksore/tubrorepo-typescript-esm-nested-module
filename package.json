@@ -8,12 +8,14 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "turbo start",
+    "start": "concurrently yarn:tsc yarn:turbo:start",
+    "turbo:start": "turbo start",
     "clean": "turbo clean",
     "build": "tsc && turbo build",
-    "test": "tsc -b --watch"
+    "tsc": "tsc -b --watch"
   },
   "devDependencies": {
+    "concurrently": "^7.6.0",
     "eslint-config-custom": "*",
     "prettier": "latest",
     "turbo": "latest"

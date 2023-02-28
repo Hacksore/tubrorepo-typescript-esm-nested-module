@@ -1,6 +1,7 @@
 {
   "files": [],
   "references": [
-    {"path": "libs/api" }
+    {"path": "libs/api" },
+    {"path": "apps/node" },
   ]
 }

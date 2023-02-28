@@ -1,1 +1,1 @@
-export const getCoreVersion = () => "corezz";
+export const getCoreVersion = () => "ok";
