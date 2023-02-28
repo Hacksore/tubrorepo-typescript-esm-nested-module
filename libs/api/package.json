@@ -1,0 +1,15 @@
+{
+  "name": "@acme/api",
+  "version": "0.0.0",
+  "type": "module",
+  "license": "MIT",
+  "exports": {
+    "./core": "./core/index.ts",
+    "./github": "./github/index.ts"
+  },
+  "devDependencies": {
+    "rimraf": "^4.1.2",
+    "tsconfig": "*",
+    "tsup": "^6.6.3"
+  }
+}
