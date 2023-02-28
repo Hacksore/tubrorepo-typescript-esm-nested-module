@@ -8,8 +8,7 @@
     "packages/*"
   ],
   "scripts": {
-    "start": "concurrently yarn:tsc yarn:turbo:start",
-    "turbo:start": "turbo start",
+    "start": "turbo start",
     "clean": "turbo clean",
     "build": "tsc && turbo build",
     "tsc": "tsc -b --watch"
