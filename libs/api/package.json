@@ -4,17 +4,27 @@
   "type": "module",
   "license": "MIT",
   "exports": {
-    ".": { 
+    ".": {
       "types": "./dist/index.d.ts",
       "import": "./dist/index.js"
     },
-    "./core": { 
+    "./core": {
       "types": "./dist/core/index.d.ts",
       "import": "./dist/core/index.js"
     },
-    "./github":{
+    "./github": {
       "types": "./dist/github/index.d.ts",
       "import": "./dist/github/index.js"
+    }
+  },
+  "typesVersions": {
+    "*": {
+      "./core": [
+        "./src/core/index.ts"
+      ],
+      "./github": [
+        "./src/github/core/index.ts"
+      ]
     }
   },
   "scripts": {
