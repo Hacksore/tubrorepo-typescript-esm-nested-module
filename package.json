@@ -9,6 +9,7 @@
   ],
   "scripts": {
     "start": "turbo start",
+    "dev": "turbo dev",
     "clean": "turbo clean",
     "build": "tsc && turbo build",
     "tsc": "tsc -b --watch"

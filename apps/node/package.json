@@ -4,14 +4,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "start": "tsx watch src/index.ts",
+    "start": "node dist/index.js",
+    "dev": "tsx watch src/index.ts",
     "clean": "rimraf dist tsconfig.tsbuildinfo .turbo",
-    "build": "vite build"
+    "build": "esbuild src/index.ts --bundle --outfile=dist/index.js"
   },
   "dependencies": {
     "@acme/api": "*"
   },
   "devDependencies": {
+    "esbuild": "^0.17.16",
     "tsconfig": "*",
     "tsx": "^3.12.3",
     "vite": "^4.2.1"
