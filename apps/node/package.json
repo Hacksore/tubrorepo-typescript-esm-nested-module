@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "start": "tsx watch src/index.ts",
-    "clean": "rimraf dist tsconfig.tsbuildinfo .turbo",
+    "clean": "rimraf dist tsconfig.tsbuildinfo .turbo node_modules",
     "build": "yarn clean && tsc"
   },
   "dependencies": {
